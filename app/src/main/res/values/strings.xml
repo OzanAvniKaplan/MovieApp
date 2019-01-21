@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="top_rated_movies"><b>TOP RATED MOVIES</b></string>
+    <string name="now_playing"><b>Now Playing</b></string>
+    <string name="popular"><b>Popular</b></string>
+    <string name="back">Back</string>
+    <string name="movie">MOVIES</string>
+    <string name="tab_title_tv">TV</string>
+    <string name="tv"><b>TV</b></string>
+    <string name="tab_title_profile">PROFILE</string>
+    <string name="title_profile"><b>Profile</b></string>
+    <string name="full_cast_and_crew"><b>Full Cast &amp; Crew</b></string>
+    <string name="full_cast">Full Cast</string>
+    <string name="applogist">AppLogist</string>
+</resources>

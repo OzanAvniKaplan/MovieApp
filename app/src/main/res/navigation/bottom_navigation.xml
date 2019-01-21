@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/bottom_navigation"
+            app:startDestination="@id/movieFragment">
+
+    <fragment android:id="@+id/movieFragment" android:name="com.ozan.movieapp.ui.movie.MovieFragment"
+              android:label="movie_fragment" tools:layout="@layout/movie_fragment">
+        <action android:id="@+id/action_movieFragment_to_detailFragment"
+                app:destination="@id/detailFragment" app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"/>
+    </fragment>
+
+    <fragment android:id="@+id/tvFragment" android:name="com.ozan.movieapp.ui.tv.TvFragment" android:label="tv_fragment"
+              tools:layout="@layout/tv_fragment"/>
+
+    <fragment android:id="@+id/detailFragment" android:name="com.ozan.movieapp.ui.detail.DetailActivity"
+              android:label="detail_fragment" tools:layout="@layout/detail_activity"/>
+
+    <fragment android:id="@+id/profileFragment" android:name="com.ozan.movieapp.ui.profile.ProfileFragment"
+              android:label="profile_fragment" tools:layout="@layout/profile_fragment"/>
+
+</navigation>

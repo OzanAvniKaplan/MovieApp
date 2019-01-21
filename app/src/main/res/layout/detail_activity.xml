@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.detail.DetailActivity">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl" tools:ignore="MissingConstraints">
+
+            <ImageView
+                    android:id="@+id/ac_details_iv_trailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/splash"/>
+
+            <ImageView
+                    android:id="@+id/ac_details_iv_back"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/back_button"
+                    android:rotation="180"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"/>
+
+            <TextView
+                    android:id="@+id/ac_details_tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_toEndOf="@+id/ac_details_iv_back"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginStart="3dp"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icn_share"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginStart="20dp">
+
+                <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="145dp"
+                        android:background="@drawable/splash"
+                        android:id="@+id/ac_details_iv_poster"
+                        android:scaleType="fitXY"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="JUSTICE LEAGUE"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/white"
+                    android:layout_alignBottom="@+id/ac_details_iv_trailer"
+                    android:layout_toEndOf="@+id/cardView"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="20dp" android:id="@+id/ac_details_tv_title"/>
+            <TextView
+                    android:id="@+id/ac_details_tv_type"
+                    tools:text="Action, Adventure, Fantasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/cardView"
+                    android:layout_marginStart="15dp"
+                    android:textSize="10sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/ac_details_iv_trailer"/>
+            <TextView
+                    android:id="@+id/ac_details_tv_rate"
+                    tools:text="9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/cardView"
+                    android:layout_below="@+id/ac_details_tv_type"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@android:color/holo_red_dark"/>
+            <TextView
+                    android:id="@+id/ac_details_tv_float_rate"
+                    tools:text=".8"
+                    android:gravity="top"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ac_details_tv_type"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:layout_toEndOf="@+id/ac_details_tv_rate"/>
+
+            <RatingBar
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ac_details_rating_bar"
+                    style="@style/CustomRatingBarTest"
+                    android:layout_height="wrap_content"
+                    android:stepSize="0.1"
+                    android:numStars="5"
+                    android:layout_marginEnd="10dp"
+                    android:isIndicator="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/ac_details_tv_float_rate"
+                    android:layout_below="@+id/ac_details_tv_type"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/ac_details_tv_description"
+                tools:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rl"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"/>
+        <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="#43b4b4b4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/ac_details_tv_description"
+                android:id="@+id/relativeLayout">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_cast"
+                    android:layout_marginStart="20dp"
+                    android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ac_details_rv_cast_crew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal" android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

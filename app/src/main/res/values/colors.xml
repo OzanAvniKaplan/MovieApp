@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="selected1">
+        <gradient android:endX="18.840605" android:endY="20.810154"
+                  android:startX="5.004129" android:startY="-0.4904" android:type="linear">
+            <item android:color="#FFF99F00" android:offset="0"/>
+            <item android:color="#FFDB3069" android:offset="1"/>
+        </gradient>
+    </color>
+
+</resources>

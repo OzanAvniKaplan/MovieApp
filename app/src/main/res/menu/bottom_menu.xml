@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/movieFragment"
+            android:icon="@drawable/bottom_nav_movies_icn"
+            android:title="@string/movie"/>
+    <item
+            android:id="@+id/tvFragment"
+            android:icon="@drawable/bottom_nav_tv_icn"
+            android:title="@string/tab_title_tv"/>
+    <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/bottom_nav_profile_icn"
+            android:title="@string/tab_title_profile"/>
+
+</menu>
